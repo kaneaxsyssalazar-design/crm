@@ -10,7 +10,13 @@
  */
  .customer-card { max-width: 640px; }
 
-.customer-photo {
+.customer-photo-wrap {
+  width: 96px;
+  height: 96px;
+  flex-shrink: 0;
+}
+
+.customer-photo-wrap .customer-photo {
   width: 96px;
   height: 96px;
   border-radius: 50%;
@@ -18,7 +24,7 @@
   display: block;
 }
 
-.customer-photo--blank {
+.customer-photo-wrap .customer-photo--blank {
   background: #dbdbdb;
   color: #4a4a4a;
   font-size: 2.5rem;

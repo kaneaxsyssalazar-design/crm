@@ -1,13 +1,13 @@
 <div class="box customer-card">
   <article class="media">
     <figure class="media-left">
-      <p class="image is-96x96">
+      <div class="customer-photo-wrap">
         <% if customer.image.attached? %>
           <%= image_tag customer.image, alt: customer.full_name, class: "customer-photo" %>
         <% else %>
           <span class="customer-photo customer-photo--blank"><%= customer.full_name.to_s.first.to_s.upcase %></span>
         <% end %>
-      </p>
+      </div>
     </figure>
     <div class="media-content">
       <div class="content">

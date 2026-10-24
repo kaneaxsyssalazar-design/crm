@@ -1,2 +1,9 @@
-<h1>Customers#alphabetized</h1>
-<p>Find me in app/views/customers/alphabetized.html.erb</p>
+<section class="section">
+  <div class="container">
+    <h1 class="title">Customers (A–Z)</h1>
+    <%= render "nav" %>
+    <% @customers.each do |customer| %>
+      <%= render partial: "customer", locals: { customer: customer } %>
+    <% end %>
+  </div>
+</section>
